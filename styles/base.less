@@ -61,7 +61,7 @@ atom-text-editor {
   color: @purple;
 
   &.syntax--control {
-    color: @purple;
+    color: @syntax-text-color;
   }
 
   &.syntax--operator {
@@ -78,7 +78,7 @@ atom-text-editor {
 }
 
 .syntax--storage {
-  color: @purple;
+  color: @syntax-text-color;
 }
 
 .syntax--constant {
@@ -213,7 +213,7 @@ atom-text-editor {
     color: @light-gray;
   }
   &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
-    color: @blue;
+    font-weight:800;
   }
 
   &.syntax--name.syntax--section {
@@ -260,7 +260,7 @@ atom-text-editor {
 }
 .syntax--source{
    .syntax--control{
-      color:@light-gray;
+      color:@syntax-text-color;
    }
 
 }
