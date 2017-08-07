@@ -1,0 +1,46 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+
+ atom-text-editor {
+   font-family: 'Fira Code';
+   font-style: normal;
+   text-rendering: optimizeLegibility;
+   font-weight: 500;
+ }
+ atom-text-editor.editor {
+    .syntax--string {
+
+    }
+   .syntax--string.syntax--quoted,
+   .syntax--string.syntax--regexp {
+     -webkit-font-feature-settings: "liga" off, "calt" off;
+   }
+   .syntax--source.syntax--js.syntax--jsx > .syntax--keyword.syntax--syntax--control.syntax--flow.syntax--js,
+   .syntax--storage:not(.syntax--arrow), .syntax--type .syntax--function,
+   .syntax--keyword.syntax--operator.syntax--new.syntax--js,
+   .syntax--keyword.syntax--control.syntax--js,
+   .syntax--keyword.syntax--operator.syntax--of.syntax--js {
+     vertical-align: baseline;
+     font-family: 'flottflott';
+     height: inherit;
+     font-size: 1.5em;
+     line-height: 1rem;
+   }
+
+   .syntax--keyword.syntax--operator.syntax--new.syntax--js{
+      color:#2be087!important;
+   }
+
+   .syntax--entity.syntax--name,
+   .syntax--support.syntax--function.syntax--js {
+     font-weight: bold;
+   }
+ }
