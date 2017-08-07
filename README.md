@@ -10,6 +10,5 @@ The hackerman syntax theme for atom
 
 ## Links
 | Atom.io | https://atom.io/themes/hackerman-syntax               |
-|---------|-------------------------------------------------------|
 | GitHub  | https://github.com/sean-codes/hackerman-syntax        |
 | Issues  | https://github.com/sean-codes/hackerman-syntax/issues |
