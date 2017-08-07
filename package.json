@@ -1,13 +1,13 @@
 {
-  "name": "night-code-syntax",
+  "name": "hackerman-syntax",
   "theme": "syntax",
   "version": "0.1.0",
-  "description": "A short description of your syntax theme",
+  "description": "The hackerman syntax theme for atom",
   "keywords": [
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/sean-codes/night-code",
+  "repository": "https://github.com/sean-codes/hackerman-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
