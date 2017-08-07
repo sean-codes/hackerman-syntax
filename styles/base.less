@@ -52,7 +52,6 @@ atom-text-editor {
 }
 
 
-// Syntax styles
 
 .syntax--comment {
   color: @light-gray;
@@ -74,7 +73,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--unit {
-    color: @orange;
+    color: @red;
   }
 }
 
@@ -90,7 +89,7 @@ atom-text-editor {
   }
 
   &.syntax--numeric {
-    color: @orange;
+    color: @red;
   }
 
   &.syntax--other.syntax--color {
@@ -100,10 +99,22 @@ atom-text-editor {
   &.syntax--other.syntax--symbol {
     color: @green;
   }
+  &.syntax--rgb-value{
+      color:@red;
+  }
+
+  &.syntax--property-value{
+     color:@red;
+ }
+
+ &.syntax--important{
+    color:@light-gray;
+}
+
 }
 
 .syntax--variable {
-  color: @red;
+  color: @purple;
 
   &.syntax--interpolation {
     color: darken(@red, 10%);
@@ -120,7 +131,7 @@ atom-text-editor {
 }
 
 .syntax--string {
-  color: @green;
+  color: @syntax-text-color;
 
 
   &.syntax--regexp {
@@ -178,24 +189,28 @@ atom-text-editor {
   }
 
   &.syntax--function  {
-    color: @blue;
+    color: @red;
 
     &.syntax--any-method {
-      color: @blue;
+      color: @red;
     }
+  }
+
+  &.syntax--varaiable{
+     color: @red;
   }
 }
 
 .syntax--entity {
   &.syntax--name.syntax--function {
-    color: @blue;
+    color: @red;
   }
   &.syntax--name.syntax--type {
-    color: @blue;
+    color: @red;
   }
 
   &.syntax--other.syntax--inherited-class {
-    color: @green;
+    color: @light-gray;
   }
   &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
     color: @blue;
@@ -210,9 +225,9 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--attribute-name {
-    color: @blue;
+    color: @red;
     &.syntax--id {
-      color: @blue;
+      color: @red;
     }
   }
 }
@@ -243,7 +258,12 @@ atom-text-editor {
 .syntax--none {
   color: @syntax-text-color;
 }
+.syntax--source{
+   .syntax--control{
+      color:@light-gray;
+   }
 
+}
 .syntax--markup {
   &.syntax--bold {
     color: @orange;
