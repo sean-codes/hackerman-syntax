@@ -7,7 +7,7 @@
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/night-code-syntax",
+  "repository": "https://github.com/sean-codes/night-code",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
