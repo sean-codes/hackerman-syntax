@@ -9,6 +9,8 @@ The hackerman syntax theme for atom
 [Flottflott](http://www.dafont.com/flottflott.font)
 
 ## Links
+| Link To |                                                       |
+|---------|-------------------------------------------------------|
 | Atom.io | https://atom.io/themes/hackerman-syntax               |
 | GitHub  | https://github.com/sean-codes/hackerman-syntax        |
 | Issues  | https://github.com/sean-codes/hackerman-syntax/issues |
