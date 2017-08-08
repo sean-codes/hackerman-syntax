@@ -137,7 +137,7 @@ atom-text-editor {
 }
 
 .syntax--string {
-  color: @syntax-text-color;
+  color: @blue;
 
 
   &.syntax--regexp {
@@ -154,6 +154,7 @@ atom-text-editor {
 }
 
 .syntax--punctuation {
+   color: @syntax-text-color;
   &.syntax--definition {
     &.syntax--comment {
       color: @light-gray;
@@ -163,7 +164,7 @@ atom-text-editor {
     &.syntax--variable,
     &.syntax--parameters,
     &.syntax--array {
-      color: @syntax-text-color;
+      color: @blue;
     }
 
     &.syntax--heading,
@@ -235,6 +236,9 @@ atom-text-editor {
     &.syntax--id {
       color: @red;
     }
+    &.syntax--pseudo-element{
+      color:@syntax-text-color;
+   }
   }
 }
 
