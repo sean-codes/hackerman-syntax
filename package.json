@@ -1,7 +1,7 @@
 {
   "name": "hackerman-syntax",
   "theme": "syntax",
-  "version": "0.13.0",
+  "version": "0.14.0",
   "description": "The hackerman syntax theme for atom",
   "keywords": [
     "syntax",
