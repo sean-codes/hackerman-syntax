@@ -1,42 +1,45 @@
-/*
- * Your Stylesheet
- *
- * This stylesheet is loaded when Atom starts up and is reloaded automatically
- * when it is changed and saved.
- *
- * Add your own CSS or Less to fully customize Atom.
- * If you are unfamiliar with Less, you can read more about it here:
- * http://lesscss.org
- */
-.mixinFiracode {
+//-------------------------------------------------------------------------------//
+//--------------------------| Mixin and Variables |------------------------------//
+//-------------------------------------------------------------------------------//
+.MIXIN_Firacode {
    font-family: 'Fira Code';
    font-style: normal;
    text-rendering: optimizeLegibility;
    font-weight: 500;
 }
 
-.mixinFlottflott {
+.MIXIN_Flottflott {
    vertical-align: baseline;
    font-family: 'flottflott';
    height: inherit;
    font-size: 1.6em;
    line-height: 1rem;
 }
+
+.MIXIN_ligature{
+   -webkit-font-feature-settings: "liga" off, "calt" off;
+}
+
+//-------------------------------------------------------------------------------//
+//-------------------------------| Selectors |-----------------------------------//
+//-------------------------------------------------------------------------------//
 atom-text-editor {
-   .mixinFiracode;
+   .MIXIN_Firacode;
 
    .syntax--string.syntax--quoted,
    .syntax--string.syntax--regexp {
-      -webkit-font-feature-settings: "liga" off, "calt" off;
+      .MIXIN_ligature;
    }
+
    .syntax--source > .syntax--keyword.syntax--syntax--control.syntax--flow,
    .syntax--storage:not(.syntax--arrow), .syntax--type .syntax--function,
    .syntax--keyword.syntax--control,
+   .syntax--keyword.syntax--operator:not(.syntax--assignment):not(.syntax--relational),
    .syntax--attribute-name.syntax--pseudo-element{
-      .mixinFlottflott;
+      .MIXIN_Flottflott;
 
       .syntax--punctuation{
-         .mixinFiracode;
+         .MIXIN_Firacode;
          font-size:initial;
       }
    }
