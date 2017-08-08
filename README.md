@@ -17,4 +17,4 @@ The hackerman syntax theme for atom
 |            |                                                       |
 |------------|-------------------------------------------------------|
 |  FiraCode  | https://github.com/tonsky/FiraCode                    |
-| MR.ROBOT   | https://fontmeme.com/fonts/mr-robot-font/             |
+|  MR.ROBOT  | https://fontmeme.com/fonts/mr-robot-font/             |
