@@ -2,7 +2,7 @@
 
 The hackerman syntax theme for atom
 
-![A screenshot of your theme](https://raw.githubusercontent.com/sean-codes/hackerman-syntax/master/example.png?v=3)
+![A screenshot of your theme](https://raw.githubusercontent.com/sean-codes/hackerman-syntax/master/example.png?v=5)
 
 ## Links
 
