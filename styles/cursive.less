@@ -10,11 +10,24 @@
 
 .MIXIN_Flottflott {
    vertical-align: baseline;
-   font-family: 'flottflott';
+   font-family: 'flottflott', cursive;
    height: inherit;
    font-size: 1.6em;
    font-weight:lighter;
    line-height: 1rem;
+}
+
+.MIXIN_Megrim {
+    vertical-align: baseline;
+    font-family: 'Megrim', cursive;
+    height: inherit;
+    font-size: 1.1em;
+    font-weight: bolder;
+    line-height: 1rem;
+}
+
+.MIXIN_FANCYFONT{
+   .MIXIN_Megrim
 }
 
 .MIXIN_ligature{
@@ -37,7 +50,7 @@ atom-text-editor {
    .syntax--keyword.syntax--control,
    .syntax--keyword.syntax--operator:not(.syntax--assignment):not(.syntax--relational):not(.syntax--logical),
    .syntax--attribute-name.syntax--pseudo-element{
-      .MIXIN_Flottflott();
+      .MIXIN_FANCYFONT();
 
       .syntax--punctuation{
          .MIXIN_Firacode;

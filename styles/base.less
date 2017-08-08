@@ -58,14 +58,14 @@ atom-text-editor {
 }
 
 .syntax--comment {
-  color: @light-gray;
+  color: @syntax-color-comments;
 }
 
 .syntax--keyword {
   color: @purple;
 
   &.syntax--control {
-    color: @syntax-text-color;
+    color: @light-gray;
   }
 
   &.syntax--operator {
@@ -82,7 +82,7 @@ atom-text-editor {
 }
 
 .syntax--storage {
-  color: @syntax-text-color;
+  color: @light-gray;
 }
 
 .syntax--constant {
@@ -155,7 +155,7 @@ atom-text-editor {
    color: @syntax-text-color;
   &.syntax--definition {
     &.syntax--comment {
-      color: @light-gray;
+      color: @syntax-color-comments;
     }
 
     &.syntax--string{
@@ -272,7 +272,7 @@ atom-text-editor {
 }
 .syntax--source{
    .syntax--control{
-      color:@syntax-text-color;
+      color:@light-gray;
    }
 
 }
