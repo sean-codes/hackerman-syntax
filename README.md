@@ -17,4 +17,5 @@ The hackerman syntax theme for atom
 |            |                                                       |
 |------------|-------------------------------------------------------|
 |  FiraCode  | https://github.com/tonsky/FiraCode                    |
+| FlottFlott | http://www.dafont.com/flottflott.font                 |
 |  MR.ROBOT  | https://fontmeme.com/fonts/mr-robot-font/             |
