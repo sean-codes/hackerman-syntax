@@ -24,11 +24,11 @@
 //-------------------------------| Selectors |-----------------------------------//
 //-------------------------------------------------------------------------------//
 atom-text-editor {
-   .MIXIN_Firacode;
+   .MIXIN_Firacode();
 
    .syntax--string.syntax--quoted,
    .syntax--string.syntax--regexp {
-      .MIXIN_ligature;
+      .MIXIN_ligature();
    }
 
    .syntax--source > .syntax--keyword.syntax--syntax--control.syntax--flow,
@@ -36,7 +36,7 @@ atom-text-editor {
    .syntax--keyword.syntax--control,
    .syntax--keyword.syntax--operator:not(.syntax--assignment):not(.syntax--relational),
    .syntax--attribute-name.syntax--pseudo-element{
-      .MIXIN_Flottflott;
+      .MIXIN_Flottflott();
 
       .syntax--punctuation{
          .MIXIN_Firacode;
