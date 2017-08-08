@@ -10,9 +10,10 @@
 
 .MIXIN_Flottflott {
    vertical-align: baseline;
-   font-family: 'flottflott';
+   font-family: 'MrRobot';
    height: inherit;
-   font-size: 1.6em;
+   font-size: 0.75em;
+   font-weight:lighter;
    line-height: 1rem;
 }
 
@@ -34,7 +35,7 @@ atom-text-editor {
    .syntax--source > .syntax--keyword.syntax--syntax--control.syntax--flow,
    .syntax--storage:not(.syntax--arrow), .syntax--type .syntax--function,
    .syntax--keyword.syntax--control,
-   .syntax--keyword.syntax--operator:not(.syntax--assignment):not(.syntax--relational),
+   .syntax--keyword.syntax--operator:not(.syntax--assignment):not(.syntax--relational):not(.syntax--logical),
    .syntax--attribute-name.syntax--pseudo-element{
       .MIXIN_Flottflott();
 
@@ -43,9 +44,4 @@ atom-text-editor {
          font-size:initial;
       }
    }
-
-   .test:after{
-
-   }
-
 }
