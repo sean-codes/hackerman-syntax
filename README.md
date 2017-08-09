@@ -62,18 +62,19 @@ The hackerman syntax theme for atom
          }
 
          .syntax--source > .syntax--keyword.syntax--syntax--control.syntax--flow,
-         .syntax--storage:not(.syntax--arrow), .syntax--type .syntax--function,
+         .syntax--storage:not(.syntax--arrow):not(.syntax--sql), .syntax--type .syntax--function,
          .syntax--keyword.syntax--control,
          .syntax--keyword:not(.syntax--sql):not(.syntax--operator):not(.syntax--assignment):not(.syntax--relational):not(.syntax--logical),
          .syntax--attribute-name.syntax--pseudo-element{
             .MIXIN_FANCYFONT();
 
-            .syntax--punctuation{
+            .syntax--punctuation, .syntax-sql{
                .MIXIN_Firacode;
                font-size:initial;
             }
          }
       }
+
 
 ## Install The Fonts:
 
