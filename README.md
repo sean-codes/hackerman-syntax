@@ -60,6 +60,9 @@ The hackerman syntax theme for atom
     //-------------------------------| Selectors |-----------------------------------//
     //-------------------------------------------------------------------------------//
     atom-text-editor {
+       .syntax--comment{
+          font-style: inherit;
+       }
        .MIXIN_Firacode();
        .syntax--string.syntax--quoted,
        .syntax--string.syntax--regexp {
@@ -71,9 +74,10 @@ The hackerman syntax theme for atom
        .syntax--keyword:not(.syntax--sql):not(.syntax--operator):not(.syntax--assignment):not(.syntax--relational):not(.syntax--logical),
        .syntax--attribute-name.syntax--pseudo-element{
           .MIXIN_FANCYFONT();
-          .syntax--punctuation, .syntax-sql{
+          .syntax--punctuation, .syntax-sql, .syntax--comment{
              .MIXIN_Firacode;
              font-size:initial;
           }
        }
     }
+
